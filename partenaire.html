@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CQDRIVE — Devenir partenaire</title>
+  <meta name="description" content="CQDRIVE — Sécurité routière, pensée pour la nuit." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="CQDRIVE - Accueil">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="brand-title">
+        <strong>CQDRIVE</strong>
+        <span>Sécurité routière · Nuit · International</span>
+      </div>
+    </a>
+    <nav class="menu" aria-label="Navigation">
+      <a class="pill" href="index.html">Accueil</a>
+      <a class="pill" href="concept.html">Concept</a>
+      <a class="pill" href="comment-ca-marche.html">Comment ça marche</a>
+      <a class="pill" href="chauffeur.html">Devenir chauffeur</a>
+      <a class="pill" href="chauffeur-navette.html">Chauffeur navette</a>
+      <a class="pill" href="ambassadeur.html">Devenir ambassadeur</a>
+      <a class="pill active" href="partenaire.html">Devenir partenaire</a>
+      <a class="cta" href="index.html#telechargement">Télécharger</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-card">
+      <div class="hero-inner" style="text-align:left">
+        <div class="kicker" style="margin:0"><span class="dot"></span> Devenir partenaire</div>
+        <h1 style="text-align:left">Devenir partenaire</h1>
+        <p class="lead" style="margin-left:0;margin-right:0;text-align:left">Être partenaire CQDRIVE, ce n’est pas afficher un logo de plus. C’est proposer une solution concrète à vos clients lorsqu’ils sortent, consomment et rentrent chez eux.</p>
+      </div>
+    </div>
+
+    <div class="form-wrap" style="margin-top:18px">
+      <div class="form-head">
+        <h2>Formulaire</h2>
+        <p>Remplis les informations utiles. CQDRIVE répond dès validation.</p>
+      </div>
+      <form name="devenir-partenaire" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
+        <input type="hidden" name="form-name" value="devenir-partenaire" />
+        <p style="display:none">
+          <label>Ne pas remplir : <input name="bot-field" /></label>
+        </p>
+        <div class="note"><strong>Important :</strong> votre compte démarre en mode client. Après validation, CQDRIVE active votre profil partenaire dans l’application.</div>
+        
+<div class="row">
+  <label>Nom de l’établissement*
+    <input required name="etablissement" placeholder="Ex : Le Bar du Centre" />
+  </label>
+  <label>Type d’établissement*
+    <select required name="type">
+      <option value="" disabled selected>Choisir</option>
+      <option>Bar</option>
+      <option>Restaurant</option>
+      <option>Discothèque</option>
+      <option>Événement / Lieu</option>
+      <option>Autre</option>
+    </select>
+  </label>
+</div>
+
+<div class="row">
+  <label>Adresse (rue + numéro)*
+    <input required name="adresse" placeholder="Ex : Rue de la Paix 12" />
+  </label>
+  <label>Ville*
+    <input required name="ville" placeholder="Ex : Genève" />
+  </label>
+</div>
+
+<div class="row">
+  <label>Nom du contact*
+    <input required name="contact_nom" placeholder="Prénom Nom" />
+  </label>
+  <label>Téléphone du contact*
+    <input required name="contact_tel" placeholder="+41 ..." />
+  </label>
+</div>
+
+<div class="row">
+  <label>Email du contact*
+    <input required type="email" name="contact_email" placeholder="contact@..." />
+  </label>
+  <label>Horaires (optionnel)
+    <input name="horaires" placeholder="Ex : Jeu–Sam 18h–03h" />
+  </label>
+</div>
+
+<label>Message / infos utiles (optionnel)
+  <textarea name="message" placeholder="Particularités, objectifs, questions, etc."></textarea>
+</label>
+
+        <div class="submit">
+          <button class="send" type="submit">Envoyer la demande</button>
+          <span class="minihelp">Après validation, tu recevras les prochaines étapes.</span>
+        </div>
+        <p class="minihelp">Après validation, vous recevez les instructions QR et l’activation dans l’application.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>CQDRIVE</h3>
+      <p>Une organisation pensée pour la nuit, construite pour se déployer à l’international.</p>
+      <p><strong>La sécurité routière, ancrée dans la réalité.</strong></p>
+      <p>© <span data-year></span> CQDRIVE — Tous droits réservés.</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Pour toute question, partenariat ou demande média :</p>
+      <p><a href="mailto:contact@cqdrive.ch">contact@cqdrive.ch</a></p>
+      <p class="kbd">Swiss Company (CH)</p>
+    </div>
+    <div>
+      <h3>Liens utiles</h3>
+      <p><a href="index.html#telechargement">Téléchargement</a><br/>
+         <a href="partenaire.html">Devenir partenaire</a><br/>
+         <a href="chauffeur.html">Devenir chauffeur</a><br/>
+         <a href="ambassadeur.html">Devenir ambassadeur</a>
+      </p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>CQDRIVE — Swiss Company (CH)</span>
+    <span>Site propulsé par Netlify Forms</span>
+  </div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
