@@ -1,148 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CQDRIVE — Sécurité routière la nuit</title>
-  <meta name="description" content="CQDRIVE — Sécurité routière, pensée pour la nuit." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CQDRIVE – Mobilité humaine & responsable</title>
+
+  <meta name="description" content="CQDRIVE organise des retours et déplacements sécurisés, humains et responsables. Une plateforme pensée pour aujourd’hui et pour demain." />
+
+  <style>
+    :root {
+      --bg-main: #0b0d12;
+      --bg-card: #141824;
+      --text-main: #f1f3f7;
+      --text-muted: #b3b7c4;
+      --accent: #7c8cff;
+      --accent-soft: rgba(124,140,255,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #151a2e, var(--bg-main));
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+
+    header nav a {
+      color: var(--text-muted);
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    header nav a:hover {
+      color: var(--text-main);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 24px 120px;
+      text-align: center;
+    }
+
+    .tagline {
+      display: inline-block;
+      padding: 8px 16px;
+      background: var(--accent-soft);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    p.lead {
+      max-width: 720px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    .cta {
+      padding: 14px 26px;
+      border-radius: 10px;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .cta.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .cta.secondary {
+      background: transparent;
+      border: 1px solid var(--accent-soft);
+      color: var(--text-main);
+    }
+
+    .blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+
+    .block {
+      background: var(--bg-card);
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .block h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .block p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html" aria-label="CQDRIVE - Accueil">
-      <div class="logo" aria-hidden="true"></div>
-      <div class="brand-title">
-        <strong>CQDRIVE</strong>
-        <span>Sécurité routière · Nuit · International</span>
-      </div>
-    </a>
-    <nav class="menu" aria-label="Navigation">
-      <a class="pill active" href="index.html">Accueil</a>
-      <a class="pill" href="concept.html">Concept</a>
-      <a class="pill" href="comment-ca-marche.html">Comment ça marche</a>
-      <a class="pill" href="chauffeur.html">Devenir chauffeur</a>
-      <a class="pill" href="chauffeur-navette.html">Chauffeur navette</a>
-      <a class="pill" href="ambassadeur.html">Devenir ambassadeur</a>
-      <a class="pill" href="partenaire.html">Devenir partenaire</a>
-      <a class="cta" href="index.html#telechargement">Télécharger</a>
-    </nav>
-  </div>
+<header>
+  <div class="logo">CQDRIVE</div>
+  <nav>
+    <a href="concept.html">Concept</a>
+    <a href="comment-ca-marche.html">Comment ça marche</a>
+    <a href="chauffeur.html">Devenir chauffeur</a>
+    <a href="chauffeur-navette.html">Chauffeur navette</a>
+    <a href="ambassadeur.html">Devenir ambassadeur</a>
+    <a href="partenaire.html">Devenir partenaire</a>
+  </nav>
 </header>
 
 <main>
+  <div class="tagline">Pensé pour aujourd’hui · Construit pour demain</div>
 
-<section class="hero">
-  <div class="container">
-    <div class="hero-card">
-      <div class="hero-inner">
-        <div class="kicker"><span class="dot"></span> Né en Suisse · Pensé pour la nuit · Déploiement international</div>
-        <h1>Et si la sécurité routière<br/>commençait vraiment la nuit&nbsp;?</h1>
-        <p class="lead">
-          CQDRIVE organise des retours sécurisés après les soirées, les apéros et les événements.
-          La plateforme absorbe la complexité de la nuit pour offrir une expérience fluide, humaine et maîtrisée.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="#telechargement">Télécharger l’application</a>
-          <a class="btn" href="comment-ca-marche.html">Comprendre le système</a>
-        </div>
-        <div class="chips" aria-label="Points clés">
-          <span class="chip">Validation humaine</span>
-          <span class="chip">Organisation nocturne</span>
-          <span class="chip">Chauffeur navette intégré</span>
-          <span class="chip">Ambassadeurs & responsables pays</span>
-        </div>
-      </div>
-    </div>
+  <h1>
+    Et si la sécurité<br />
+    commençait maintenant&nbsp;?
+  </h1>
+
+  <p class="lead">
+    CQDRIVE est une plateforme d’organisation de déplacements sécurisés,
+    humains et responsables.  
+    Nous simplifions la mobilité du quotidien, des situations sensibles
+    et des besoins réels, avec une approche structurée, locale et évolutive.
+  </p>
+
+  <div class="cta-group">
+    <button class="cta primary">Télécharger l’application</button>
+    <button class="cta secondary">Comprendre le système</button>
   </div>
-</section>
 
-<section class="section" id="modes">
-  <div class="container grid2">
-    <div class="card">
-      <div class="tag"><span class="mini"></span> Mode Sérénité</div>
-      <h2>Retour nocturne, sans stress</h2>
+  <section class="blocks">
+    <div class="block">
+      <h3>Mode Sérénité</h3>
       <p>
-        Une option destinée aux personnes préférant être accompagnées par une <strong>chauffeuse</strong>.
-        Lorsqu’elle est activée, CQDRIVE privilégie les profils féminins — <strong>uniquement si disponibles</strong>.
-        Aucun discours flou : c’est un choix de confort, conditionné à la présence de chauffeuses.
+        Une option pensée pour les personnes recherchant un retour
+        encore plus rassurant.  
+        Lorsque disponible, CQDRIVE privilégie une organisation avec
+        des chauffeuses, dans un cadre clair, assumé et sans ambiguïté.
+        L’objectif : réduire le stress, pas promettre l’impossible.
       </p>
-      <ul class="list">
-        <li class="li"><div class="badge">1</div><div><div class="small"><strong>Option volontaire</strong> : activable/désactivable par l’utilisateur.</div></div></li>
-        <li class="li"><div class="badge">2</div><div><div class="small"><strong>Préférence claire</strong> : priorité aux profils féminins quand possible.</div></div></li>
-        <li class="li"><div class="badge">3</div><div><div class="small"><strong>Transparence</strong> : si aucun profil féminin n’est disponible, CQDRIVE propose la meilleure alternative.</div></div></li>
-      </ul>
     </div>
 
-    <div class="card">
-      <div class="tag cyan"><span class="mini"></span> International — déploiement structuré</div>
-      <h2>Déploiement par pays, cadre clair</h2>
+    <div class="block">
+      <h3>International by design</h3>
       <p>
-        CQDRIVE est construit pour se déployer par pays avec une organisation terrain simple :
-        un responsable pays (contact direct, français requis) + des ambassadeurs locaux par ville.
-        Objectif : qualité constante, exécution rapide, et adaptation aux réalités nocturnes locales.
+        CQDRIVE est conçu pour se déployer pays par pays, avec des
+        responsables locaux et des ambassadeurs terrain.  
+        Une structure claire, adaptable aux réalités locales,
+        sans dépendre d’un modèle centralisé rigide.
       </p>
-      <ul class="list">
-        <li class="li"><div class="badge">A</div><div><div class="small"><strong>Responsable pays</strong> : pilotage local + standard de qualité.</div></div></li>
-        <li class="li"><div class="badge">B</div><div><div class="small"><strong>Ambassadeurs</strong> : partenariats bars/lieux + activation terrain.</div></div></li>
-        <li class="li"><div class="badge">C</div><div><div class="small"><strong>Déploiement ville par ville</strong> : itérations rapides, base solide.</div></div></li>
-      </ul>
-      <div style="margin-top:14px">
-        <a class="btn" href="ambassadeur.html">Candidater “Responsable pays”</a>
-      </div>
     </div>
-  </div>
-</section>
-
-<section class="section" id="telechargement">
-  <div class="container">
-    <div class="form-wrap">
-      <div class="form-head">
-        <h2>Téléchargement</h2>
-        <p>
-          Le téléchargement sera activé avec les liens officiels (App Store / Google Play).
-          En attendant, tu peux déjà candidater (chauffeur / ambassadeur / partenaire).
-        </p>
-      </div>
-      <div style="padding:0 18px 18px; display:flex; gap:12px; flex-wrap:wrap">
-        <a class="btn primary" href="chauffeur.html">Devenir chauffeur</a>
-        <a class="btn" href="ambassadeur.html">Devenir ambassadeur</a>
-        <a class="btn" href="partenaire.html">Devenir partenaire</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>CQDRIVE</h3>
-      <p>Une organisation pensée pour la nuit, construite pour se déployer à l’international.</p>
-      <p><strong>La sécurité routière, ancrée dans la réalité.</strong></p>
-      <p>© <span data-year></span> CQDRIVE — Tous droits réservés.</p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p>Pour toute question, partenariat ou demande média :</p>
-      <p><a href="mailto:contact@cqdrive.ch">contact@cqdrive.ch</a></p>
-      <p class="kbd">Swiss Company (CH)</p>
-    </div>
-    <div>
-      <h3>Liens utiles</h3>
-      <p><a href="index.html#telechargement">Téléchargement</a><br/>
-         <a href="partenaire.html">Devenir partenaire</a><br/>
-         <a href="chauffeur.html">Devenir chauffeur</a><br/>
-         <a href="ambassadeur.html">Devenir ambassadeur</a>
-      </p>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>CQDRIVE — Swiss Company (CH)</span>
-    <span>Site propulsé par Netlify Forms</span>
-  </div>
+
+<footer>
+  © CQDRIVE – Mobilité responsable · Plateforme V1
 </footer>
-<script src="assets/main.js"></script>
+
 </body>
 </html>
